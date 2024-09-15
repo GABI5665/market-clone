@@ -24,12 +24,32 @@ footer {
   cursor: pointer;
 }
 .footer-icons__desc {
-  
+  margin-top: 5px;
   font-weight: bold;
   transform: scale(0.8);
-  margin-top: 5px;
+  
 }
 
+@keyframes icons-aa {
+0% {
+  transform: translateX(0px);
+}
+30% {
+  transform: translateY(-10px);
+}
+70% {
+  transform: translateY(-10px);
+}
+
+100%{
+  transform: translateY(0px);
+}
+}
 .footer-icons__img {
   width: 30px;
+  
+}
+
+.footer-icons:hover .footer-icons__img{
+  animation: 2s icons-aa;
 }
